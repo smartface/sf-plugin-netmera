@@ -1,49 +1,23 @@
 {
-  "_from": "sf-plugin-netmera",
-  "_id": "sf-plugin-netmera@1.0",
-  "_inBundle": false,
-  "_integrity": "sha512-PrprpXcmht9Pcwaas/PDVf8ewAzzAqhvr4fgHe2OQ99LdTqZiY1eudnC2EqLQO5QgIkH2teoiV4x/8KeSP4QIQ==",
-  "_location": "/sf-plugin-netmera",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "sf-plugin-netmera",
-    "name": "sf-plugin-netmera",
-    "escapedName": "sf-plugin-netmera",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "sf-plugin-netmera",
+  "version": "1.0",
+  "description": "Smartface Netmera Plugin for Smartface Native Framework",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bash ./scripts/postinstall.sh"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
+  "keywords": [
+    "smartface",
+    "plugins",
+    "netmera",
+    "javascript",
+    "typescript"
   ],
-  "_resolved": "https://cd.smartface.io/repository/npm-all-public/sf-plugin-netmera/-/sf-plugin-netmera-1.0.tgz",
-  "_shasum": "13a1ef22ccfed4218c6fe417eeb994c55ec506b9",
-  "_spec": "sf-plugin-netmera",
-  "_where": "/projects/workspace/scripts/node_modules",
   "author": {
     "name": "Smartface",
     "email": "info@smartface.io",
     "url": "http://smartface.io"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Smartface Netmera Plugin for Smartface Native Framework",
-  "homepage": "http://bitbucket.org/smartface-team/sf-plugins#readme",
-  "keywords": [
-    "smartface",
-    "plugins",
-    "netmera",
-    "typescript",
-    "javascript"
-  ],
   "license": "ISC",
-  "main": "index.js",
-  "name": "sf-plugin-netmera",
-  "scripts": {
-    "postinstall": "bash ./scripts/postinstall.sh"
-  },
-  "version": "1.0"
+  "homepage": "http://bitbucket.org/smartface-team/sf-plugins#readme"
 }

@@ -55,10 +55,5 @@ export default class Netmera {
     static set turnOffSendingEvent(turnOff: Boolean) {
         NativeNetmera.turnOffSendingEventAndUserUpdate(turnOff);
     }
-
-    //add parameter with type
-    static sendEvent(): void {
-        NativeNetmera.sendEvent();
-    }
 }
 
