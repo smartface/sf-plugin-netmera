@@ -2,12 +2,15 @@ const AndroidConfig = require("sf-core/util/Android/androidconfig");
 const NativeNetmera = requireClass("com.netmera.Netmera");
 
 class Netmera {
-    
-    static init(senderId, sdkApiKey) {  
-        NativeNetmera.init(AndroidConfig.activity, senderId, sdkApiKey);
+
+    static init(senderId, sdkApiKey) {
+        if (sdkApiKey)
+            NativeNetmera.init(AndroidConfig.activity, senderId, sdkApiKey);
+        else
+            NativeNetmera.init(AndroidConfig.activity, senderId);
     }
 
-    static requestPermissionsForLocation(){
+    static requestPermissionsForLocation() {
         NativeNetmera.requestPermissionsForLocation();
     }
 
