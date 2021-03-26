@@ -23,7 +23,7 @@ class Netmera {
             NativeNetmera.enablePush();
         else
             NativeNetmera.disablePush();
-    }
+    } 
 
 
     static set popupPresentationEnabled(enabled) {
