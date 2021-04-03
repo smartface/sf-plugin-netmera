@@ -1,4 +1,4 @@
-# Firebase plugin from Smartface
+# Netmera plugin from Smartface
 [![Twitter: @Smartface_io](https://img.shields.io/badge/contact-@Smartface_io-blue.svg?style=flat)](https://twitter.com/smartface_io)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/smartface/sf-extension-extendedlabel/master/LICENSE)
 
@@ -30,7 +30,7 @@ Download google-services.json from [Firebase console](https://console.firebase.g
 
 - Place google-services.json  file  into `~/workspace/config/Android` 
 - This repository contains prepared android library project under `~/Native/android` directory. 
-- Finally, specify firebase plugin library to config/project.json.
+- Finally, specify netmera plugin library to config/project.json.
 
 ```javascript
 "plugins": {
@@ -106,7 +106,7 @@ apply plugin:  'com.google.gms.google-services'
 ```
 - Congrats you have just done Android configuration.
 
-*Note:  By post-install scripts, Firebase's Android & iOS libraries/zip will be placed to appropriate paths and specify the its configuration to `config/project.json`*
+*Note:  By post-install scripts, netmera plugins will be placed to appropriate paths and specify the its configuration to `config/project.json`*
 
 ### API
 For each module api documentation is in separate file. Please visit [doc](./doc) folder
