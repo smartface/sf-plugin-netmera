@@ -108,10 +108,8 @@ apply plugin:  'com.google.gms.google-services'
 
 *Note:  By post-install scripts, Firebase's Android & iOS libraries/zip will be placed to appropriate paths and specify the its configuration to `config/project.json`*
 
-## API docs (TypeScript)
-After initializing the Firebase, Firebase APIs can be used.
-- [Full API Docs](./doc/API.md) - You can use intelliSense on Smartface Cloud IDE for better & faster development.
-- [Predefined Analitics Events](./doc/firebaseAnalyticsEvent.md) - You can access the values from code via intelliSense on `Firebase.analytics.Events`
+### API
+For each module api documentation is in separate file. Please visit [doc](./doc) folder
 
 ## Initialize
 - Initialize your SDK using the following code snippet: (You must write this code in app.ts)

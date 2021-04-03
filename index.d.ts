@@ -77,4 +77,4 @@ declare class Netmera {
     */
     static set turnOffSendingEvent(turnOff: Boolean);
 }
-exports = Netmera;
+export Netmera;

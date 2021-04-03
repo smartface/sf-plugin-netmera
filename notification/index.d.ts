@@ -2,7 +2,7 @@ const NativePushBroadcastReceiver = requireClass("com.smartface.netmera.PushBroa
 
 declare class Notifications {
 
-    static set onPushRegister(event: (data) => void): void;
+    static set onPushRegister(senderId: String, pushToken: String): void;
 
 
     static set onPushReceive(event: (data : any) => void): void;

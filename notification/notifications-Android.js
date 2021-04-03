@@ -5,7 +5,7 @@ let _onPushRegister, _onPushReceive,
     _onPushButtonClicked;
 class Notifications {
 
-    static set onPushRegister(event) {
+    static set onPushRegister(senderId, pushToken) {
         _onPushRegister = event;
     }
 
