@@ -41,10 +41,6 @@ public class PushBroadcastReceiver extends NetmeraPushBroadcastReceiver {
 
     @Override
     protected void onPushOpen(Context context, final Bundle bundle, NetmeraPushObject netmeraPushObject) {
-
-        Log.d("SFPushBroadcastReceiver", " onPushOpen onPushEvents " + onPushEvents);
-
-
         final PendingResult pendingResult = goAsync();
         new Task(pendingResult, new Callback() {
             @Override
@@ -72,9 +68,6 @@ public class PushBroadcastReceiver extends NetmeraPushBroadcastReceiver {
 
     @Override
     protected void onPushButtonClicked(final Context context, final Bundle bundle, NetmeraPushObject netmeraPushObject) {
-
-        Log.d("SFPushBroadcastReceiver", " onPushButtonClicked onPushEvents " + onPushEvents);
-
         final PendingResult pendingResult = goAsync();
         new Task(pendingResult, new Callback() {
             @Override
@@ -122,7 +115,6 @@ public class PushBroadcastReceiver extends NetmeraPushBroadcastReceiver {
 
             long currentMs = System.currentTimeMillis();
             while (onPushEvents == null && (System.currentTimeMillis() - currentMs) < DEFAULT_AWAIT_TIMEOUT_MS) {
-                Log.d("SFPushBroadcastReceiver", " kalan --> " + (System.currentTimeMillis() - currentMs) + " onPushEvents " + onPushEvents);
                 try {
                     Thread.sleep(DEFAULT_AWAIT_MS);
                 } catch (InterruptedException e) {
