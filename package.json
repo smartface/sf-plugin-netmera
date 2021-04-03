@@ -1,6 +1,6 @@
 {
   "name": "sf-plugin-netmera",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Smartface Netmera Plugin for Smartface Native Framework",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,17 @@
     "email": "info@smartface.io",
     "url": "http://smartface.io"
   },
+  "dependencies": {},
   "license": "ISC",
-  "homepage": "http://bitbucket.org/smartface-team/sf-plugins#readme"
+  "homepage": "http://bitbucket.org/smartface-team/sf-plugins#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-typescript": "^7.13.0",
+    "jsdoc-babel": "^0.5.0",
+    "jsdoc-to-markdown": "^5.0.3",
+    "typescript": "^4.2.3"
+  }
 }

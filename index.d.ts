@@ -1,4 +1,3 @@
-
 /**
 * Netmera is the main class to be used for configuring the SDK and interacting with Netmera servers.
 * @class
@@ -31,7 +30,7 @@ declare class Netmera {
     * @public
     * @static
     */
-    static set pushEnabled();
+    static get pushEnabled();
 
     /**
     * Enable/disables push notification for this device.
@@ -40,7 +39,7 @@ declare class Netmera {
     * @static
     * @params {boolean} enabled
     */
-    static get pushEnabled(enabled: Boolean);
+    static set pushEnabled(enabled: Boolean);
 
     /**
     * Enable/disable Netmera to present received popups immediately. By default, Netmera presents received popup style notifications automatically.Use this method to re-enable Netmera to automatically present popup style notifications if you previously disabled using disablePopupPresentation() method. If a popup style notification has been received during the time at which popup presentation was disabled, it will be shown immediately after you call this method. If multiple popup notifications have been received, only the most recent one will be presented
@@ -78,4 +77,4 @@ declare class Netmera {
     */
     static set turnOffSendingEvent(turnOff: Boolean);
 }
-export = Netmera;
+exports = Netmera;
